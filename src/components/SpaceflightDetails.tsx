@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Result from "../interface/Space";
 
 const SpaceflightDetails = () => {
@@ -46,6 +46,7 @@ const SpaceflightDetails = () => {
                 <Card.Text>
                   Data di pubblicazione: {flightsId.published_at}
                 </Card.Text>
+                <Link to={flightsId.url}> Link </Link>
               </Card.Body>
             </Card>
           )}
