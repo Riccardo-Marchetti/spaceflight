@@ -8,6 +8,7 @@ import FetchSpaceflights from "./components/FetchSpaceflights";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SpaceflightDetails from "./components/SpaceflightDetails";
 import CustomNavbar from "./components/Navbar";
+import CustomFooter from "./components/Footer";
 function App() {
   return (
     <BrowserRouter>
@@ -27,6 +28,7 @@ function App() {
           element={<SpaceflightDetails />}
         />
       </Routes>
+      <CustomFooter />
     </BrowserRouter>
   );
 }
