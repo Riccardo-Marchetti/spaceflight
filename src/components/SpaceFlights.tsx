@@ -1,6 +1,5 @@
 import { Card } from "react-bootstrap";
 import Result from "../interface/Space";
-import { Link } from "react-router-dom";
 
 interface spaceFlights {
   flight: Result;
